@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box1,.box2,.box3, .box4,.box5{
+    padding: 15px;
+    margin: 15px;
+    background-image: linear-gradient(#165ae3,#76baf9,#230cb4, #360768);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+.box3{
+    height: 100px;
+    gap: 15px;
+}
+.box4{
+    height: 300px;
+}
+.minibox{
+    background-color: rgba(133, 75, 234, 0.646);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(133, 75, 234, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav{
+    background-color: rgba(133, 75, 234, 0.646);
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px 16px;
+    width: 400px;
+}
+.minibox1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 1051px){ 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box4{
+        flex-grow: 1;
+        height: 300px;
+    }
+    .box3{
+        flex-grow: 1;
+        order: 1;
+        width: 100%;
+    }
+    .box5{
+        width: 100%;
+        order: 2;
+    }
+}
+@media screen and (min-width: 1149px) {
+    .container{
+        max-width: 1149px;
+        margin: 0 auto;
+    }
+}
